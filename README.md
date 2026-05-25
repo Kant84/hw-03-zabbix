@@ -57,3 +57,22 @@
 
 ### Проблема (агент недоступен):
 ![Задание 5 — Триггер сработал](screenshots/zadanie-5-2.png)
+
+## Задание 6* — UserParameter на Bash
+
+Скрипт: `/etc/zabbix/scripts/userparam_script.sh`
+
+### Код скрипта:
+```bash
+#!/bin/bash
+case "$1" in
+    1) echo "Санакин Андрей" ;;
+    2) date '+%Y-%m-%d %H:%M:%S' ;;
+    *) echo "Unknown parameter" ;;
+esac
+UserParameter в конфиге:
+ini
+Copy
+UserParameter=user.info[*],/etc/zabbix/scripts/userparam_script.sh $1
+Результат в Latest data:
+screenshots/zadanie-6.png
