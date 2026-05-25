@@ -32,3 +32,14 @@
 
 **Все метрики (CPU + Memory):**
 ![Задание 3 — Все метрики](screenshots/zadanie-3-2-all.png)
+
+## Задание 4 — Кастомный дашборд
+
+Дашборд: **Sanakinaa Dashboard**
+
+### Виджеты:
+- CPU utilization — sanakinaa-1
+- RAM sanakinaa-1 — Memory utilization
+
+### Скриншот дашборда:
+![Задание 4 — Дашборд](screenshots/zadanie-4.png)
