@@ -70,8 +70,11 @@ case "$1" in
     2) date '+%Y-%m-%d %H:%M:%S' ;;
     *) echo "Unknown parameter" ;;
 esac
+```bash
+```bash
 ### UserParameter в конфиге:
 UserParameter=user.info[*],/etc/zabbix/scripts/userparam_script.sh $1
+```bash
 ### Результат в Latest data:
 ![Задание 6 — UserParameter на Bash](screenshots/zadanie-6.png)
 
