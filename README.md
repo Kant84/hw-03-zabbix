@@ -63,19 +63,19 @@
 Скрипт: `/etc/zabbix/scripts/userparam_script.sh`
 
 ### Код скрипта:
-```bash
+"""bash
 #!/bin/bash
 case "$1" in
     1) echo "Санакин Андрей" ;;
     2) date '+%Y-%m-%d %H:%M:%S' ;;
     *) echo "Unknown parameter" ;;
 esac
-'''
+"""
+
 ### UserParameter в конфиге:
-'''ini
+"""ini
 UserParameter=user.info[*],/etc/zabbix/scripts/userparam_script.sh $1
-'''
+"""
 
 ### Результат в Latest data:
 ![Задание 6 — UserParameter на Bash](screenshots/zadanie-6.png)
-
