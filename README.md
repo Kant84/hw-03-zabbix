@@ -65,11 +65,11 @@
 ### Код скрипта:
 ```bash
 #!/bin/bash
- "$1" in
+case "$1" in
     1) echo "Санакин Андрей" ;;
     2) date '+%Y-%m-%d %H:%M:%S' ;;
     *) echo "Unknown parameter" ;;
-
+esac
 ### UserParameter в конфиге:
 UserParameter=user.info[*],/etc/zabbix/scripts/userparam_script.sh $1
 ### Результат в Latest data:
