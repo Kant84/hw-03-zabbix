@@ -75,4 +75,4 @@ ini
 Copy
 UserParameter=user.info[*],/etc/zabbix/scripts/userparam_script.sh $1
 Результат в Latest data:
-(screenshots/zadanie-6.png)
+![Задание 6 — UserParameter на Bash](screenshots/zadanie-6.png)
