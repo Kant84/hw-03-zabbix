@@ -8,8 +8,8 @@
 
 | Item | Key | Интервал |
 |------|-----|----------|
-| CPU utilization | system.cpu.util[,user] | 1m |
-| Memory utilization | vm.memory.size[pused] | 1m |
+| CPU utilization | system.cpu.util[,user,avg1] | 1m |
+| Memory utilization | vm.memory.size[pavailable] | 1m |
 
 ### Скриншот шаблона:
 ![Задание 1 — Шаблон CPU RAM](screenshots/zadanie-1.png)
@@ -28,7 +28,7 @@
 ### Графики метрик Test Template:
 
 **CPU utilization:**
-![Задание 3 — CPU](screenshots/zadanie-3-1-cpu.png.png)
+![Задание 3 — CPU](screenshots/zadanie-3-1-cpu.png)
 
 **Все метрики (CPU + Memory):**
 ![Задание 3 — Все метрики](screenshots/zadanie-3-2-all.png)
