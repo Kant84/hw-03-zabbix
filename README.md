@@ -1,0 +1,34 @@
+# Домашнее задание: Система мониторинга Zabbix. Часть 2
+
+**Выполнил:** Санакин Андрей
+
+## Задание 1 — Шаблон мониторинга CPU и RAM
+
+Шаблон: **Test Template**
+
+| Item | Key | Интервал |
+|------|-----|----------|
+| CPU utilization | system.cpu.util[,user] | 1m |
+| Memory utilization | vm.memory.size[pused] | 1m |
+
+### Скриншот шаблона:
+![Задание 1 — Шаблон CPU RAM](screenshots/zadanie-1.png)
+
+## Задание 2-3 — Добавление хостов и привязка шаблонов
+
+### Хосты:
+| Хост | IP | Статус | Шаблоны |
+|------|-----|--------|---------|
+| sanakinaa-1 | 192.168.101.146:10050 | 🟢 Enabled | Linux by Zabbix agent, Test Template |
+| sanakinaa-2 | 127.0.0.1:10050 | 🟢 Enabled | Linux by Zabbix agent, Test Template |
+
+### Скриншот хостов:
+![Задание 2-3 — Хосты](screenshots/zadanie-2.png)
+
+### Графики метрик Test Template:
+
+**CPU utilization:**
+![Задание 3 — CPU](screenshots/zadanie-3-1-cpu.png.png)
+
+**Все метрики (CPU + Memory):**
+![Задание 3 — Все метрики](screenshots/zadanie-3-2-all.png)
